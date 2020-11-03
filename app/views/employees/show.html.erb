@@ -1,0 +1,10 @@
+<h1>Show page for <%=@employee.full_name%></h1>
+
+<label>Name: <%=@employee.full_name%></label><br>
+<label>Alias: <%=@employee.alias%></label><br>
+<label>Title: <%=@employee.title%></label><br>
+<label>Office: <%=@employee.office%></label><br>
+
+<%= image_tag(@employee.img_url, {:style => "width:50%"})%><br>
+
+<label>Dog they belong to: <%=link_to @employee.dog.name, dog_path(@employee.dog)%></label>
